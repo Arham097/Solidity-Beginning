@@ -11,6 +11,99 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "liker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tweetAuthor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newLikedCount",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetLiked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "unliker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tweetAuthor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newLikedCount",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetUnliked",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "MAX_TWEET_LENGTH",
 				"outputs": [
@@ -263,11 +356,11 @@
 	},
 	"sources": {
 		"contracts/Twitter.sol": {
-			"keccak256": "0x495f60c8b5dff7479a0ca00b8ca189c720caf49e253551be0598eefdd9a66d7e",
+			"keccak256": "0x8d7adadf621b790ee9f6aaf58dbe4066e6a88a16c7e6616fcacfc6233ef31531",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://88daac50cba939a46efa77961fdd9b4d096d749ecd4e23ef5d968ed840c26832",
-				"dweb:/ipfs/QmaXiJ9nsvPnWqKxBpgzUoLkbpds76WU4SWPhLaWFLdRiL"
+				"bzz-raw://663e62d80275448aa3c9baa165d854023f07a11480be982ad329da24a60f7e9b",
+				"dweb:/ipfs/QmdMqcNdW7zdEQNH3RnkZefT8KxE9ZembuPUfC4zR6my6x"
 			]
 		}
 	},
